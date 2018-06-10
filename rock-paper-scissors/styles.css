@@ -1,3 +1,8 @@
+body{
+    background: rgba(240, 240, 240, .5);
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
 #headline{
     text-align: center;
     text-transform: uppercase;
@@ -11,7 +16,7 @@
 }
 .player{
     height: 100px;
-    width: 75px;
+    width: 100px;
     /* background: grey; */
     text-align: center;
     text-align: center;
@@ -19,7 +24,7 @@
 }
 .computer {
     height: 100px;
-    width: 100px;
+    width: 140px;
     /* background: grey; */
     text-align: center;
     font-size: 25px;
@@ -29,6 +34,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+
 }
 
 img{
@@ -37,6 +43,7 @@ img{
     object-fit: cover;
     object-position: center;
     border-radius: 25px;
+    cursor: pointer;
 }
 .results{
     margin-top: 50px;
@@ -45,7 +52,7 @@ img{
 }
 
 .gameOver{
-    background: rgba(100, 100, 100, .5);
+    background: rgba(100, 100, 100, .8);
     height: 100%;
     width: 100%;
     z-index: 100;
@@ -57,14 +64,31 @@ img{
 button{
     display: block;
     margin: 0 auto;
-    margin-top: 200px;
+    margin-top: 150px;
     height: 100px;
     width: 400px;
     border-radius: 25px;
     font-size: 25px;
+    text-transform: uppercase;
 }
 
 img:hover{
     opacity: .5;
     border: 3px solid black;
+}
+
+.winner{
+    text-align: center;
+    margin-top: 150px;
+    text-transform: uppercase;
+    color: white;
+}
+
+footer{
+    border-top: 1px solid white;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
 }

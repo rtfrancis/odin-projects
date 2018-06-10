@@ -24,7 +24,9 @@ gameOver.appendChild(reset);
 
 reset.innerHTML = '<button>Reset</button>';
 
-
+const winner = document.createElement("div");
+winner.classList.add("winner");
+gameOver.insertBefore(winner, reset);
 
 // reset.appendChild(resetButton);
 
@@ -113,12 +115,14 @@ function game(playerChoice) {
     computerBox.textContent = "Computer: " + computerScore;
     if (computerScore == 5 || playerScore == 5) {
         if (computerScore == 5) {
-            results.innerHTML = "<h2>The computer won! Better luck next time!</h2>";
+            results.innerHTML = "";
+            winner.innerHTML="<h1>The computer won. Better luck next time!</h1>";
             mainBody.appendChild(gameOver);
             return;
         }
         if (playerScore == 5) {
-            results.innerHTML = "<h2>You won! Great job!</h2>";
+            results.innerHTML = "";
+            winner.innerHTML="<h1>You won! Great job!</h1>";
             mainBody.appendChild(gameOver);
             return;
         }
