@@ -1,0 +1,47 @@
+.container {
+    /* border-top: 1px solid black; */
+    /* border-left: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: helvetica, sans-serif;
+}
+.cell {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.buttons {
+    /* border: 1px solid black; */
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+button {
+    border: 1px solid black;
+    width: 150px;
+    border-radius: 20px;
+    outline: none;
+}
+button:hover {
+    background-color: lightgrey;
+    color: white;
+    border: 1px solid grey;
+}
+#container {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    width: 500px;
+    margin: 0 auto;
+}
