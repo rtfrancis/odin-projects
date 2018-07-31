@@ -1,3 +1,11 @@
+#container {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    width: 500px;
+    margin: 0 auto;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 .container {
     /* border-top: 1px solid black; */
     /* border-left: 1px solid black; */
@@ -15,6 +23,7 @@ h2 {
     text-transform: uppercase;
     font-family: helvetica, sans-serif;
 }
+
 .cell {
     border-bottom: 1px solid black;
     border-right: 1px solid black;
@@ -28,20 +37,16 @@ h2 {
     justify-content: space-around;
     margin-bottom: 20px;
 }
+
 button {
     border: 1px solid black;
     width: 150px;
     border-radius: 20px;
     outline: none;
 }
+
 button:hover {
     background-color: lightgrey;
     color: white;
     border: 1px solid grey;
-}
-#container {
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    width: 500px;
-    margin: 0 auto;
 }
